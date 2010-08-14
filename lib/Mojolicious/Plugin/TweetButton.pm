@@ -7,7 +7,7 @@ use base 'Mojolicious::Plugin';
 
 use Mojo::ByteStream;
 
-our $VERSION = '0.0001';
+our $VERSION = '0.0002';
 
 sub register {
     my ($self, $app, $conf) = @_;
@@ -85,19 +85,19 @@ Location of the tweet count box (can be "vertical", "horizontal" or "none";
 
     <%= tweet_button url => 'http://example.com' %>
 
-The URL you are sharing (the current URL by default).
+The URL you are sharing (HTTP Referrer by default).
 
 =item text
 
     <%= tweet_button url => 'Wow!' %>
 
-The text that will appear in the tweet ("Check this out!" by default).
+The text that will appear in the tweet (Content of the <title> tag by default).
 
 =item via
 
     <%= tweet_button via => 'vtivti' %>
 
-The author of the tweet ("tweetbutton" by default).
+The author of the tweet (no default).
 
 =item related
 
