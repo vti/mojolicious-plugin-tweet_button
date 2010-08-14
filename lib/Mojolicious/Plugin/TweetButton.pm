@@ -122,6 +122,29 @@ L<Mojolicious::Plugin> and implements the following new ones.
 
 Register helper in L<Mojolicious> application.
 
+=head1 DEVELOPMENT
+
+=head2 Repository
+
+    http://github.com/vti/mojolicious-plugin-tweet_button
+
+=head1 AUTHOR
+
+Viacheslav Tykhanovskyi, C<vti@cpan.org>.
+
+=head1 CREDITS
+
+In alphabetical order:
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2010, Viacheslav Tykhanovskyi
+
+This program is free software, you can redistribute it and/or modify it under
+the terms of the Artistic License version 2.0.
+
+=cut
+
 =head1 SEE ALSO
 
 L<Mojolicious>, L<Mojolicious::Guides>, L<http://mojolicious.org>.
