@@ -7,6 +7,8 @@ use base 'Mojolicious::Plugin';
 
 use Mojo::ByteStream;
 
+our $VERSION = '0.0001';
+
 sub register {
     my ($self, $app, $conf) = @_;
 
