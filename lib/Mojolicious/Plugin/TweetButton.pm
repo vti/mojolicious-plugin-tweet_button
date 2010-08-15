@@ -7,7 +7,7 @@ use base 'Mojolicious::Plugin';
 
 use Mojo::ByteStream;
 
-our $VERSION = '0.0002';
+our $VERSION = '0.0003';
 
 sub register {
     my ($self, $app, $conf) = @_;
@@ -33,7 +33,7 @@ sub register {
             my $tag = <<"EOF";
 <a href="http://twitter.com/share" class="twitter-share-button"$attrs>Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 EOF
-            return Mojo::ByteStream->new($tag)->trim;
+            return Mojo::ByteStream->new($tag);
         }
     );
 }
